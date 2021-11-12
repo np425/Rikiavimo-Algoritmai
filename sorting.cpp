@@ -26,10 +26,12 @@ constexpr size_t algoKiek = sizeof(sortAlgos)/sizeof(sortAlgo);
 
 int main() {
 	size_t n;
+	std::cout << "Iveskite kiek skaičių surikiuoti: " << std::endl;
 	std::cin >> n;
 
 	int sk[algoKiek][n];
 	
+	std::cout << "Iveskite skaičius kuriuos norite surikiuoti: " << std::endl;
 	for (size_t i = 0; i < n; ++i) {
 		std::cin >> sk[0][i];
 		for (size_t a = 1; a < algoKiek; ++a) {
